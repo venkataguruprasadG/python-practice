@@ -1,0 +1,12 @@
+import pandas as pd
+
+student_data = [
+    [1, 'John', 15],
+    [2, 'Alice', 14],
+    [3, 'Bob', 13],
+    [4, 'Diana', 16],
+]
+
+df = pd.DataFrame(student_data, columns=['id','name','age'])
+
+print(df)
