@@ -10,3 +10,7 @@ student_data = [
 df = pd.DataFrame(student_data, columns=['id','name','age'])
 
 print(df)
+
+dd=df[df['age']>14][['name','age']]
+
+print(dd)
