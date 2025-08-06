@@ -15,6 +15,8 @@ average_mean = df['age'].mean()
 max_value = df['age'].max()
 min_value = df['age'].min()
 
+print()
+
 print("Average Age:", average_mean)
 print("Maximum Age:", max_value)
 print("Minimum Age:", min_value)
@@ -23,10 +25,16 @@ df.to_csv('students.csv',index=False)
 
 new_df=pd.read_csv('students.csv')
 
+print()
+
 print(new_df)
+
+print()
 
 print(df)
 
 dd=df[df['age']>14][['name','age']]
+
+print()
 
 print(dd)
