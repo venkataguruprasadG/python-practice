@@ -10,6 +10,21 @@ student_data = [
 df = pd.DataFrame(student_data, columns=['id','name','age'])
 
 df['grade']=['10th','11th','12th']
+
+average_mean = df['age'].mean()
+max_value = df['age'].max()
+min_value = df['age'].min()
+
+print("Average Age:", average_mean)
+print("Maximum Age:", max_value)
+print("Minimum Age:", min_value)
+
+df.to_csv('students.csv',index=False)
+
+new_df=pd.read_csv('students.csv')
+
+print(new_df)
+
 print(df)
 
 dd=df[df['age']>14][['name','age']]
