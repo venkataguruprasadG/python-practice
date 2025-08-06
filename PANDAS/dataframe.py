@@ -9,6 +9,7 @@ student_data = [
 
 df = pd.DataFrame(student_data, columns=['id','name','age'])
 
+df['grade']=['10th','11th','12th']
 print(df)
 
 dd=df[df['age']>14][['name','age']]
