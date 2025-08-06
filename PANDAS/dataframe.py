@@ -9,7 +9,7 @@ student_data = [
 
 df = pd.DataFrame(student_data, columns=['id','name','age'])
 
-df['grade']=['10th','11th','12th','13th','14th']
+df['grade']=['10th','11th','12th','13th']
 
 average_mean = df['age'].mean()
 max_value = df['age'].max()
